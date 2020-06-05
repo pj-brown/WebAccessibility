@@ -3,6 +3,10 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="SEO, Online Reputation Management, and Social Media Marketing"/>
+    <meta name="keywords" content="SEO, Brand Management, Online Reputation, Social Media, Marketing, Networking, Search Engine, Optimization"/>
+    <meta name="author" content="Patrick Brown"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Horiseon - Search Engine Optimization</title>
 </head>
@@ -10,6 +14,7 @@
 <body>
     <header class="header">
         <h1>Hori<span class="seo">seo</span>n</h1>
+        <!-- I tried to add positioning to the links so they would stay with the  header when the window size changed, I believe I  -->
         <nav>
             <ul>
                 <li>
@@ -23,10 +28,11 @@
     </header>
     <!-- When I use img instead of div it creates a small gap between the header and the 'hero' image, not sure I should be changing from div here? -->
     <div class="hero"></div>
+    <!-- I am not sure if I have article and section backwards. Would it make more sense that all three are articles contained in a section? -->
     <article class="content">
         <!-- I'm not 100% on why I need both class and id for the following sections. Is it because when I hyperlink above that I need to reference the specific id using "#"? And I need the class in order to apply my css style using "."? Would it be wrong to class the three together, like "header-links"?-->
         <section id="search-engine-optimization" class="search-engine-optimization">
-            <img src="./assets/images/search-engine-optimization.jpg" class="float-left" title="Search Engine Optimization"/>
+            <img src="./assets/images/search-engine-optimization.jpg" class="float-left" title="Desk with office supplies, laptop, and coffee"/>
             <h2>Search Engine Optimization</h2>
             <p>
                 The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
@@ -34,22 +40,22 @@
         </section>
 
         <section id="online-reputation-management" class="online-reputation-management">
-            <img src="./assets/images/online-reputation-management.jpg" class="float-right" title="Online Reputation Managment"/>
+            <img src="./assets/images/online-reputation-management.jpg" class="float-right" title="Person on smartphone and laptop watching their Online Reputatoin soar"/>
             <h2>Online Reputation Management</h2>
             <p>
                 The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
             </p>
         </section>
-        <!-- I did not do this for the above two but would it be appropriate/logical to include the image inside of the header tag or just best to keep them separated? -->
+        
         <section id="social-media-marketing" class="social-media-marketing">
-            <h2>Social Media Marketing<img src="./assets/images/social-media-marketing.jpg" class="float-left" title="Social Media Marketing"/>
-            </h2>
+            <img src="./assets/images/social-media-marketing.jpg" class="float-left" title="Six people around conference table collaborating social media marketing strategies"/>
+            <h2>Social Media Marketing</h2>
             <p>
                 Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
             </p>
         </section>
     </article>
-
+<!-- added metadata for the entier HTML document, the images in the article above, and the imagies for the aside below -->
     <aside class="benefits">
         <section class="benefit-lead">
             <h3>Lead Generation</h3>

@@ -7,12 +7,14 @@
 body {
     background-color: #d9dcd6;
 }
-
+/* I tried to rearrange the css to match the flow of the HTML file */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
+    /* added positioning so the links would stay in the header */
+    position: relative;
 }
 
 .header h1 {
@@ -30,6 +32,13 @@ body {
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
+    /* added positioning so the links would stay in the header */
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    /* max-width: 100%; */
+    /* max-height: 100%; */
+/* I was attempting to get the  hyperlinks to shrink when the window resizes but I'm not sure I understood what I was reading correctly - perhaps 'vw' would work? But the W3 tutorial I was looking at didn't mention functionality with hyperlinks */
 }
 
 .header nav ul {
@@ -41,13 +50,10 @@ body {
     margin-left: 25px;
 }
 
+
 a {
     color: #ffffff;
     text-decoration: none;
-}
-
-p {
-    font-size: 16px;
 }
 
 .hero {
@@ -59,6 +65,16 @@ p {
     background-position: center;
 }
 
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+/* I combined the three ids as they shared the same styling */
 .search-engine-optimization,.online-reputation-management,.social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
@@ -67,11 +83,12 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
+/* I combined the three ids as they shared the same styling */
 
 .search-engine-optimization img,.online-reputation-management img,.social-media-marketing img {
     max-height: 200px;
 }
-
+/* I combined the three ids as they shared the same styling */
 .search-engine-optimization h2,.online-reputation-management h2,.social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
@@ -87,12 +104,6 @@ p {
     margin-left: 25px;
 }
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
-
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -102,6 +113,7 @@ p {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
+    
 }
 
 .benefit-lead,.benefit-brand,.benefit-cost {
